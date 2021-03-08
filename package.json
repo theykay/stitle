@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/theykay/stitle#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "node-sass": "^5.0.0"
   }
 }
