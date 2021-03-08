@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+// Alegreya SC
+//   italic: 400, 500
+//   normal: 400, 500
+// Alegreya Sans
+//   italic: 400, 500, 700
+//   normal: 400, 500, 700
+
+@mixin fonts($name: "Alegreya Sans", $weight: 400, $style: normal) {
+  font-family: $name, serif;
+  font-weight: $weight;
+  font-style: $style;
+}
