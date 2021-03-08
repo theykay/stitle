@@ -1,0 +1,23 @@
+{
+  "name": "stitle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -o css css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theykay/stitle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theykay/stitle/issues"
+  },
+  "homepage": "https://github.com/theykay/stitle#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
