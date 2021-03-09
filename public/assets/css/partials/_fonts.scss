@@ -7,8 +7,10 @@
 //   italic: 400, 500, 700
 //   normal: 400, 500, 700
 
-@mixin customFont($name: "Alegreya Sans", $weight: 400, $style: normal) {
+@mixin customFont($name: "Alegreya Sans", $weight: 400, $style: normal, $color: black, $size: 1rem, ) {
   font-family: $name, serif;
   font-weight: $weight;
   font-style: $style;
+  color: $color;
+  font-size: $size;
 }

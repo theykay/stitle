@@ -1,0 +1,29 @@
+@import "partials/screens";
+@import "partials/colors";
+@import "partials/fonts";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+#title {
+  padding: 1rem;
+}
+
+h1 {
+  @include customFont("Alegreya SC", 500, italic, white, 4rem);
+  text-align: center;
+  
+}
+
+#headerSub {
+  @include customFont("Alegreya SC", 500, italic, white, 1rem);
+  text-align: center;
+}
+
+span.line {
+  display: inline-block;
+}
