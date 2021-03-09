@@ -2,15 +2,53 @@
 @import "partials/colors";
 @import "partials/fonts";
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
+* {
+  color: $color-dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+li > a {
+  color: white;
+  background-color: blue;
+  // &:hover {
+  //   background-color: red;
+  // }
+}
+
+li > a:hover {
+  background-color: red;
+}
+
+.linkBtn {
+  border: 1px solid $color-main;
+  padding: 0.5rem;
+  width: fit-content;
+  background-color: white;
+  color: $color-main;
+  // &:link:visited {
+  //   background-color: white;
+  //   color: $color-main;
+  //   border-color: $color-main;
+  // }
+  &:hover {
+    background-color: $color-offwhite;
+  }
+  // &:active {
+  //   background-color: $color-main;
+  //   color: $color-offwhite;
+  //   border-color: $color-offwhite;
+  // }
 }
 
 #title {
   padding: 1rem;
+}
+
+b {
+  text-decoration: underline;
 }
 
 h1 {
@@ -20,10 +58,40 @@ h1 {
 }
 
 #headerSub {
-  @include customFont("Alegreya SC", 500, italic, white, 1rem);
   text-align: center;
+  & * {
+    @include customFont("Alegreya SC", 500, italic, white, 1rem);
+  }
 }
 
 span.line {
   display: inline-block;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: orange;
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue;
+  }
+  // @include md {
+  //   flex-direction: row;
+  //   background-color: red;
+  // }
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  a {
+
+  }
 }

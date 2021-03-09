@@ -11,8 +11,34 @@
 .bg-dark {
   background-color: #574141; }
 
+* {
+  color: #574141; }
+
+a {
+  text-decoration: none; }
+
+li > a {
+  color: white;
+  background-color: blue; }
+
+li > a:hover {
+  background-color: red; }
+
+.linkBtn {
+  border: 1px solid #800000;
+  padding: 0.5rem;
+  width: fit-content;
+  background-color: white;
+  color: #800000; }
+
+.linkBtn:hover {
+  background-color: #D19F9D; }
+
 #title {
   padding: 1rem; }
+
+b {
+  text-decoration: underline; }
 
 h1 {
   font-family: "Alegreya SC", serif;
@@ -23,12 +49,31 @@ h1 {
   text-align: center; }
 
 #headerSub {
+  text-align: center; }
+
+#headerSub * {
   font-family: "Alegreya SC", serif;
   font-weight: 500;
   font-style: italic;
   color: white;
-  font-size: 1rem;
-  text-align: center; }
+  font-size: 1rem; }
 
 span.line {
   display: inline-block; }
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: orange; }
+
+@media (min-width: 576px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue; } }
+
+ul {
+  display: flex;
+  justify-content: space-between; }
