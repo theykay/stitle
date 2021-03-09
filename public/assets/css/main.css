@@ -34,6 +34,11 @@ li > a:hover {
 .linkBtn:hover {
   background-color: #D19F9D; }
 
+.linkBtn:active {
+  background-color: #800000;
+  color: #D19F9D;
+  border-color: #D19F9D; }
+
 #title {
   padding: 1rem; }
 

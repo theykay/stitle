@@ -36,11 +36,11 @@ li > a:hover {
   &:hover {
     background-color: $color-offwhite;
   }
-  // &:active {
-  //   background-color: $color-main;
-  //   color: $color-offwhite;
-  //   border-color: $color-offwhite;
-  // }
+  &:active {
+    background-color: $color-main;
+    color: $color-offwhite;
+    border-color: $color-offwhite;
+  }
 }
 
 #title {
