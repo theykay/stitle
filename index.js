@@ -10,15 +10,15 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'))
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./index.html"));
+  res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "./about.html"));
+  res.sendFile(path.join(__dirname, "/public/about.html"));
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.join(__dirname, "./contact.html"));
+  res.sendFile(path.join(__dirname, "/public/contact.html"));
 });
 
 app.listen(PORT, () => {
