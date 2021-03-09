@@ -14,27 +14,16 @@ a {
   text-decoration: none;
 }
 
-li > a {
-  color: white;
-  background-color: blue;
-  display: block;
-  // &:hover {
-  //   background-color: red;
-  // }
-}
-
-li > a:hover {
-  background-color: red;
-}
-
 .linkBtn {
   border: 1px solid $color-main;
   padding: 0.5rem;
   width: fit-content;
   background-color: white;
-  color: $color-main;
+  @include customFont("Alegreya Sans", 400, normal, $color-main, 1.25rem);
+  // color: $color-main;
   display: block;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
+  text-align: center;
   &:link {
     background-color: white;
     color: $color-main;
@@ -66,7 +55,6 @@ b {
 h1 {
   @include customFont("Alegreya SC", 500, italic, white, 4rem);
   text-align: center;
-  
 }
 
 #headerSub {
@@ -80,25 +68,62 @@ span.line {
   display: inline-block;
 }
 
-nav {
+#headerNav {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: orange;
+  align-items: center;
   @include sm {
     flex-direction: row;
     justify-content: space-between;
     background-color: blue;
   }
-  // @include md {
-  //   flex-direction: row;
-  //   background-color: red;
-  // }
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @include sm {
+      flex-direction: row;
+    }
+  }
 }
 
-ul {
+.headList {
+  margin-bottom: 1rem;
+}
+
+.headLink {
+  @include customFont("Alegreya Sans", 400, normal, white, 1.5rem);
+  &:hover {
+    color: $color-offwhite;
+  }
+}
+
+#footHead {
+  background-color: $color-main;
+  padding: 1rem;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footHeaderSub {
+  margin-right: 1rem;
+  & * {
+    @include customFont("Alegreya SC", 500, italic, white, 1rem);
+  }
+}
+
+#footArticle {
+  background-color: $color-offwhite;
+}
+
+#footFoot {
+  background-color: $color-offwhite;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
 }
-

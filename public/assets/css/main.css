@@ -20,22 +20,19 @@ body {
 a {
   text-decoration: none; }
 
-li > a {
-  color: white;
-  background-color: blue;
-  display: block; }
-
-li > a:hover {
-  background-color: red; }
-
 .linkBtn {
   border: 1px solid #800000;
   padding: 0.5rem;
   width: fit-content;
   background-color: white;
+  font-family: "Alegreya Sans", serif;
+  font-weight: 400;
+  font-style: normal;
   color: #800000;
+  font-size: 1.25rem;
   display: block;
-  border-radius: .25rem; }
+  border-radius: 0.25rem;
+  text-align: center; }
 
 .linkBtn:link {
   background-color: white;
@@ -82,19 +79,65 @@ h1 {
 span.line {
   display: inline-block; }
 
-nav {
+#headerNav {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: orange; }
+  align-items: center; }
 
 @media (min-width: 576px) {
-  nav {
+  #headerNav {
     flex-direction: row;
     justify-content: space-between;
     background-color: blue; } }
 
-ul {
+#headerNav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center; }
+
+@media (min-width: 576px) {
+  #headerNav ul {
+    flex-direction: row; } }
+
+.headList {
+  margin-bottom: 1rem; }
+
+.headLink {
+  font-family: "Alegreya Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 1.5rem; }
+
+.headLink:hover {
+  color: #D19F9D; }
+
+#footHead {
+  background-color: #800000;
+  padding: 1rem;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#footHeaderSub {
+  margin-right: 1rem; }
+
+#footHeaderSub * {
+  font-family: "Alegreya SC", serif;
+  font-weight: 500;
+  font-style: italic;
+  color: white;
+  font-size: 1rem; }
+
+#footArticle {
+  background-color: #D19F9D; }
+
+#footFoot {
+  background-color: #D19F9D;
+  padding: 1rem;
   display: flex;
   justify-content: space-between; }
