@@ -14,11 +14,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/about.html"));
+  res.sendFile(path.join(__dirname, "./about.html"));
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/contact.html"));
+  res.sendFile(path.join(__dirname, "./contact.html"));
 });
 
 app.listen(PORT, () => {

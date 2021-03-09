@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -o ./public/assets/css ./public/assets/css -w"
+    "sass": "node-sass -o ./public/assets/css ./public/assets/css -w",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
