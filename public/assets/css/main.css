@@ -11,6 +11,9 @@
 .bg-dark {
   background-color: #574141; }
 
+body {
+  min-width: 320px; }
+
 * {
   color: #574141; }
 
@@ -19,7 +22,8 @@ a {
 
 li > a {
   color: white;
-  background-color: blue; }
+  background-color: blue;
+  display: block; }
 
 li > a:hover {
   background-color: red; }
@@ -29,7 +33,19 @@ li > a:hover {
   padding: 0.5rem;
   width: fit-content;
   background-color: white;
-  color: #800000; }
+  color: #800000;
+  display: block;
+  border-radius: .25rem; }
+
+.linkBtn:link {
+  background-color: white;
+  color: #800000;
+  border-color: #800000; }
+
+.linkBtn:visited {
+  background-color: white;
+  color: #800000;
+  border-color: #800000; }
 
 .linkBtn:hover {
   background-color: #D19F9D; }

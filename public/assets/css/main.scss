@@ -2,6 +2,10 @@
 @import "partials/colors";
 @import "partials/fonts";
 
+body {
+  min-width: 320px;
+}
+
 * {
   color: $color-dark;
 }
@@ -13,6 +17,7 @@ a {
 li > a {
   color: white;
   background-color: blue;
+  display: block;
   // &:hover {
   //   background-color: red;
   // }
@@ -28,11 +33,18 @@ li > a:hover {
   width: fit-content;
   background-color: white;
   color: $color-main;
-  // &:link:visited {
-  //   background-color: white;
-  //   color: $color-main;
-  //   border-color: $color-main;
-  // }
+  display: block;
+  border-radius: .25rem;
+  &:link {
+    background-color: white;
+    color: $color-main;
+    border-color: $color-main;
+  }
+  &:visited {
+    background-color: white;
+    color: $color-main;
+    border-color: $color-main;
+  }
   &:hover {
     background-color: $color-offwhite;
   }
@@ -90,8 +102,3 @@ ul {
   justify-content: space-between;
 }
 
-li {
-  a {
-
-  }
-}
