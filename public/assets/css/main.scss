@@ -103,7 +103,7 @@ span.line {
 
 #footHead {
   background-color: $color-main;
-  padding: 1rem;
+  padding: 1rem 2rem;
   width: auto;
   display: flex;
   justify-content: space-between;
@@ -119,11 +119,52 @@ span.line {
 
 #footArticle {
   background-color: $color-offwhite;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footTitle {
+  @include customFont("Alegreya SC", 500, normal, $color-dark, 1.5rem);
+}
+
+#footText {
+  @include customFont("Alegreya Sans", 400, normal, $color-dark, 1rem);
+}
+
+#footL {
+}
+
+#footR {
+  padding-left: 2rem;
+}
+
+#footRNavHead {
+  @include customFont("Alegreya SC", 500, normal, $color-dark, 1rem);
+  text-align: right;
+}
+
+// #footerLinks > li {
+//   text-align: right;
+// }
+
+.footLink {
+  @include customFont("Alegreya Sans", 500, normal, $color-dark, 1rem);
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #footFoot {
   background-color: $color-offwhite;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  & * {
+    @include customFont("Alegreya Sans", 500, normal, $color-dark, 1rem);
+  }
+}
+
+#footCopyright {
+  padding-right: 2rem;
 }

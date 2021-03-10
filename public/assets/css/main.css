@@ -117,7 +117,7 @@ span.line {
 
 #footHead {
   background-color: #800000;
-  padding: 1rem;
+  padding: 1rem 2rem;
   width: auto;
   display: flex;
   justify-content: space-between;
@@ -134,10 +134,58 @@ span.line {
   font-size: 1rem; }
 
 #footArticle {
-  background-color: #D19F9D; }
+  background-color: #D19F9D;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; }
+
+#footTitle {
+  font-family: "Alegreya SC", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #574141;
+  font-size: 1.5rem; }
+
+#footText {
+  font-family: "Alegreya Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #574141;
+  font-size: 1rem; }
+
+#footR {
+  padding-left: 2rem; }
+
+#footRNavHead {
+  font-family: "Alegreya SC", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #574141;
+  font-size: 1rem;
+  text-align: right; }
+
+.footLink {
+  font-family: "Alegreya Sans", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #574141;
+  font-size: 1rem; }
+
+.footLink:hover {
+  text-decoration: underline; }
 
 #footFoot {
   background-color: #D19F9D;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between; }
+
+#footFoot * {
+  font-family: "Alegreya Sans", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #574141;
+  font-size: 1rem; }
+
+#footCopyright {
+  padding-right: 2rem; }
