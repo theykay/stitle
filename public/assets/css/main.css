@@ -190,12 +190,47 @@ span.line {
 #footCopyright {
   padding-right: 2rem; }
 
-#ppModal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
+#carouselContainer {
+  display: flex; }
+
+#carousel {
   width: 100%;
-  height: 100%;
-  overflow: auto; }
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-position: center top;
+  background-size: contain; }
+
+.carouselImg {
+  width: 100%;
+  height: auto; }
+
+#carImg1 {
+  position: absolute;
+  z-index: 3;
+  animation: xfade 12s -0s infinite;
+  animation-timing-function: ease-in-out; }
+
+#carImg2 {
+  position: absolute;
+  z-index: 2;
+  animation: xfade 12s -4s inifinite;
+  animation-timing-function: ease-in-out; }
+
+#carImg3 {
+  position: absolute;
+  z-index: 1;
+  animation: xfade 12s -8s infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes xfade {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  33% {
+    opacity: 1; }
+  53% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
